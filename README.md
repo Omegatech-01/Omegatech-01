@@ -1,169 +1,92 @@
-# QUEEN-BELLA V1
+<div align="center">
 
-## Instalasi awal
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366f1,100:06b6d4&height=180&section=header&text=Omegatech-01&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20things%20that%20live%20on%20the%20internet&descAlignY=58&descSize=18" width="100%" alt="header banner" />
 
-1. Update package
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=06B6D4&center=true&vCenter=true&width=600&lines=Full-Stack+Developer;Building+E-Stream+%26+Beyond;Always+Shipping+%F0%9F%9A%80" alt="Typing SVG" />
 
-```bash
-apt update && apt upgrade
-```
+</div>
 
-2. Install nodejs
+<br/>
 
-```bash
-apt install nodejs -y
-```
+<table align="center">
+<tr>
+<td width="55%" valign="top">
 
-3. Install ffmpeg (ini diperlukan untuk mengkonversi ke format webp terutama pada "stiker")
+### 👋 About Me
 
-```bash
-apt install ffmpeg -y
-```
+- 🔭 Currently building source code projects like **[E-Stream](https://github.com/Omegatech-01/E-Stream)** and more
+- 🌱 Always learning new tools in the JS/TS ecosystem
+- 💬 Ask me about React, Vite, Tailwind, and Node
+- ⚡ Fun fact: this whole README updates itself
 
-4. Install git
+<br/>
 
-```bash
-apt install git
-```
+[![GitHub followers](https://img.shields.io/github/followers/Omegatech-01?label=Follow&style=for-the-badge&color=6366f1&logo=github)](https://github.com/Omegatech-01)
+[![Profile Views](https://komarev.com/ghpvc/?username=Omegatech-01&style=for-the-badge&color=06b6d4&label=Profile+Views)](https://github.com/Omegatech-01)
 
-5. Cloning repo
+</td>
+<td width="45%" align="center">
 
-```bash
-git clone https://github.com/Omegatech01/QUEEN-BELLA.git
-```
+<img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.gif" width="300" alt="anime girl coding gif" />
 
-## Cara Pasang
-
-### Prasyarat
-
-1. When you get this source code, make sure to install all the necessary modules by running this command in the terminal or command prompt:
-
-```bash
-cd /halaman/mengarah/ke/QUEEN-BELLA 
-```
-```bash
-npm install
-```
-
-2. After finishing the installation, run the bot with the command
-
-```bash
-npm start
-```
-
-### How to Connect to a WhatsApp Number"
-
-1. After the bot is running, there will be an option to connect to your WhatsApp number via QR code or pairing.
-
-2. If you choose QR, you will need an additional device. It is recommended to use the pairing option.
-
-3. If you choose pairing:
-
-Enter your WhatsApp number, for example: 2323467××××.
-
-Copy the displayed code.
-
-Open your WhatsApp and follow these steps:
-
-Click the three dots at the top right.
-
-Select "Linked Devices" > "Log in with phone number".
-
-Enter the code you copied earlier.
-
-Wait for the connection process; this may take some time.
-
-
-
-
-
-If you encounter difficulties, try deleting the folder lib/connection/session and restart the bott.
+</td>
+</tr>
+</table>
 
 ---
 
-### Cara Mengimpor Modul
+## 📊 GitHub Stats
 
-```javascript
-const fs = "fs".import(); 
-// Atau bisa gunakan await untuk mengatasi promise
-//const fs = await "fs".import()
-```
+<div align="center">
 
----
+<img src="https://github-readme-stats.vercel.app/api?username=Omegatech-01&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="49%" alt="GitHub Stats" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Omegatech-01&theme=tokyonight&hide_border=true" width="49%" alt="GitHub Streak" />
 
-### How to Import Modules
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Omegatech-01&layout=compact&theme=tokyonight&hide_border=true" width="49%" alt="Top Languages" />
 
-const fs = "fs".import(); 
-// Or you can use await to handle the promise
-//const fs = await "fs".import()
-
+</div>
 
 ---
 
-How to Import Functions
+## 🏆 Trophies
 
-Function imports always start from the root, so there is no need to go backward using ../../. Everything starts from the root!
+<div align="center">
 
-For example, if we want to import events.js located at ./tolkit/events.js from ./helpers/client.js, the import is done like this:
+<img src="https://github-profile-trophy.vercel.app/?username=Omegatech-01&theme=tokyonight&no-frame=true&row=1&column=6" alt="trophies" />
 
-const events = await "./tolkit/events.js".r()
-
-
----
-
-Using Event Emitters
-
-Adding or modifying files inside the ./helpers/Events folder is automatically detected.
-
-Here are the parts available in these events:
-
-ev.on({
-    cmd: [''], // These are the command features used as event triggers, you can put many cmds
-    listmenu: [''], // This part will be visible in the menu
-    tag: "", // This tag determines in which menu section the list menu will be placed
-    energy: 7, // Energy cost to use this event
-    premium: false, // Whether premium access is required to use this feature
-    args: "Enter text!", // Requires input text or quoted text
-    badword: false, // Blocks bad words in args
-    media: { // Requires media
-        type: ["audio"], // Requires media of type audio (types can include audio, document, video, image, sticker) and can be used together in an array
-        msg: "Reply with the audio?", // Response if no audio is replied
-        etc: { // Others
-            seconds: 360, // Maximum audio length 360 seconds
-            msg: "Audio cannot be longer than 360 seconds!" // Response if longer than 360 seconds
-        },
-        save: false // If true, media will be saved as an audio.mp3 file
-    },
-    urls: { // Requires url
-        formats: ["pinterest.com","pin.it"], // URL formats
-        msg: true // Response message or msg: 'reply message content'
-    },
-    isMention: true, // Requires mention (tag/reply/number input)
-    isQuoted: false, // Requires quoted message
-}, ({ media }) => {
-    // media is the returned downloaded media,
-    // if save is false then media is a buffer,
-    // if save is true then media is the name of the saved file
-});
-```
-
-## 🙌 Thanks to All Contributors
-
-Thank you to everyone who has contributed and supported the development of this project.
-Every input, idea, and help means a loti!
-
-[![](https://contrib.rocks/image?repo=omegatech-01/QUEEN-BELLA V1)](https://github.com/omegatech-01/QUEEN-BELLA V1/graphs/contributors)
-
+</div>
 
 ---
 
-## Kontributor
+## 🛠️ Tech Stack
 
-- **OMEGATECH (OMEGA001)**  
-  [Instagram](https://www.instagram.com/OMEGANAMESEDIT) • [GitHub](https://github.com/Omegatech01) • [YouTube](https://www.youtube.com/@Omega_animation) • [WhatsappChannel](https://whatsapp.com/channel/0029VawHbTr1CYoWf3uLwz3r)
-  (All contributions)
+<div align="center">
 
-- **Bella (my ex) thansk for the break up**  
-  [Instagram](https://instagram.com/ex)
-  (what she did: she give me this broken.js)
+<img src="https://skillicons.dev/icons?i=react,vite,tailwind,js,ts,nodejs,express,html,css,git,github,vscode" alt="Tech stack icons" />
 
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Omegatech-01/Omegatech-01/output/github-contribution-grid-snake-dark.svg" alt="snake animation" width="100%" />
+
+</div>
+
+> ⚙️ The snake graph above needs a one-time setup — see the note below.
+
+---
+
+## 📫 Connect With Me
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Omegatech-01)
+[![E-Stream Project](https://img.shields.io/badge/E--Stream-View_Repo-22c55e?style=for-the-badge&logo=github)](https://github.com/Omegatech-01/E-Stream)
+
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06b6d4,100:6366f1&height=100&section=footer" width="100%" alt="footer wave" />
